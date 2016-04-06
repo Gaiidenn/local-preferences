@@ -1,0 +1,79 @@
+# lxpanel <profile> config file. Manually editing is not recommended.
+# Use preference dialog in lxpanel to adjust config when you can.
+
+Global {
+  edge=bottom
+  monitor=1
+  height=30
+  align=center
+  transparent=1
+  background=0
+  tintcolor=#3d3d3d
+  alpha=255
+  iconsize=30
+  usefontcolor=1
+  fontcolor=#bbbbbb
+  usefontsize=1
+  fontsize=11
+}
+Plugin {
+  type=menu
+  Config {
+    system {
+    }
+    separator {
+    }
+    item {
+      command=run
+    }
+    separator {
+    }
+    item {
+      command=logout
+      image=gnome-logout
+    }
+    image=/home/gaiidenn/Pictures/lubuntu-logo-30.png
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=taskbar
+  Config {
+  }
+}
+Plugin {
+  type=volumealsa
+  Config {
+  }
+}
+Plugin {
+  type=indicator
+  Config {
+    applications=1
+    datetime=0
+    messages=0
+    network=0
+    session=0
+    sound=1
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=0
+    IconOnly=0
+    CenterText=0
+  }
+}
+Plugin {
+  type=launchbar
+  Config {
+  }
+}
